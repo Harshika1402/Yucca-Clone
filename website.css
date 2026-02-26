@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://yucca.co.za/wp-content/uploads/2025/09/yucca-packaging-homepage-intro-plastic-cups-for-iced-chilled-drinks-2.jpg");
+  background-size: cover;
+}
+nav{
+  width: 100%;
+  height: 10vh;
+  background-color: #D7CFC4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgb(170, 169, 169);
+}
+.navnames{
+ display: flex;
+ justify-items: space-around;
+ align-items: center;
+  gap: 40px;
+}
+.icons{
+  display: flex;
+  justify-items: space-around;
+  align-items: center;
+  gap: 20px;
+}
+@font-face {
+  font-family: HeadText;
+  src: url(/MagnetTrial-ExtraLight-BF65f3b2c458ace.otf);
+}
+.hero{
+  height: 100vh;
+  width: 100%;
+  background-color: #6c6c64;
+  position: relative;
+
+
+}
+.hero img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  padding: 0px 170px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.overlay h1{
+  font-size: 60px;
+  font-family: magnetlight;
+  width: 60%;
+}
+.card-container{
+  display: flex;
+  gap: 20px;
+}
+.card {
+  height: 280px;
+  width: 280px;
+  background-color: rgba(255, 255, 255, 0.42);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  transition: all ease 0.1s;
+  position: relative;
+}
+.text-container p{
+  font-size: 26px;
+  font-family: magnetlight;
+  font-weight: 600;
+  transition: all ease 0.3s;
+}
+
+.card:hover{
+  background-color: #FFFDF5;
+}
+.text-container{
+  height: 4vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card:hover .text-container p{
+  margin-top: -20%;
+}
+.para-container{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  gap: 5px;
+  top: 10%;
+
+
+}
+.para-text-container{
+  gap: 20px;
+   
+  font-size: 15px;
+  position: relative;
+  height: 2vh;
+  width: 100%;
+  overflow: hidden;
+}
+.para-text-container p{
+  font-family: magnetlight;
+  font-size: 12px;
+  position: absolute;
+  left: 10px;
+  bottom: -100%;
+  transition: all ease 0.5s;
+}
+
+.card:hover .para-text-container p{
+  bottom: 0;
+}
+.line-horizontal{
+  height: 1px;
+  width: 0%;
+  background-color: #000;
+  position: absolute;
+  bottom: 20%;
+  left: 10px;
+  transition: all ease 0.5s;
+}
+.card:hover .line-horizontal{
+  width: 90%;
+}
+.button-container{
+  position: absolute;
+  display: flex;
+  bottom: 5%;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 10px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+.button-container p{
+  font-family: magnetlight;
+  font-size: 12px;
+
+}
+.card:hover .button-container{
+  opacity: 1;
+  bottom: 7%;
+}
+.box{
+  width:100%;
+  height: 50vh;
+}
+.container{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.bg{
+    position: absolute;
+    inset: 0;
+    background-image: url(https://greenpaperproducts.com/_next/image?url=https:%2F%2Fa.storyblok.com%2Ff%2F139420%2F7235x4823%2Fc1ea65ce5b%2Fsustainable-food-packaging.png&w=1080&q=75);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+    z-index: 0;
+}
+.box1{
+    height: 30vh;
+    width: 300px;
+    background-color:rgba(255, 255, 255, 0.414);
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.box2{
+    height: 30vh;
+    width: 300px;
+    background-color:rgba(255, 255, 255, 0.414);
+    border-radius: 20px;
+     padding-left: 20px;
+    padding-top: 20px;
+}
+.box3{
+    height: 30vh;
+    width: 300px;
+    background-color:rgba(255, 255, 255, 0.414);
+    border-radius: 20px;
+     padding-left: 20px;
+    padding-top: 20px;
+}
+.box1,
+.box2,
+.box3{
+    position:relative;
+    z-index:1;
+}
+.box1:hover{
+    padding: 40px;
+    height: 40vh;
+    width: 400px;
+    background-color:white;
+    border-radius: 20px;
+
+}
+.box1:hover ~ .bg{
+    background-image: url(https://img.freepik.com/premium-photo/developing-edible-packaging-reduce-plastic-waste-sustainable-packaging-solution-solid-color-background_964851-147168.jpg?w=2000);
+}
+.box2:hover ~ .bg{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20231008/pngtree-stunningly-realistic-3d-render-of-food-packaging-image_13529798.png);
+}
+.box3:hover ~.bg{
+    background-image: url(https://yucca.co.za/wp-content/uploads/2025/11/yucca-packaging-agriculture-strawberry-blueberry-gooseberry-grapes-kiwi-avo.jpg);
+}
+.box2:hover{
+     height: 40vh;
+    width: 400px;
+    background-color:white;
+    border-radius: 20px;
+}
+.box3:hover{
+     height: 40vh;
+    width: 400px;
+    background-color:white;
+    border-radius: 20px;
+}
+
